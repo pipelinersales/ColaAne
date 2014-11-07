@@ -1,0 +1,144 @@
+diff -rupN libcola-orig/box.cpp libcola/box.cpp
+--- libcola-orig/box.cpp	2014-10-16 06:39:05 +0200
++++ libcola/box.cpp	2014-10-31 12:47:40 +0100
+@@ -56,8 +56,8 @@ Box::~Box()
+ bool Box::empty(void) const
+ {
+     // values will be nonnegative so can sum to check if empty.
+-    int total = m_min[vpsc::XDIM] + m_max[vpsc::XDIM] + 
+-            m_min[vpsc::YDIM] + m_max[vpsc::YDIM];
++    int total = (int)(m_min[vpsc::XDIM] + m_max[vpsc::XDIM] + 
++            m_min[vpsc::YDIM] + m_max[vpsc::YDIM]);
+     return (total == 0);
+ }
+ 
+diff -rupN libcola-orig/cola.h libcola/cola.h
+--- libcola-orig/cola.h	2014-10-16 06:39:05 +0200
++++ libcola/cola.h	2014-11-06 17:22:34 +0100
+@@ -638,6 +638,10 @@ public:
+         TestConvergence* doneTest = NULL,
+         PreIteration* preIteration=NULL);
+     ~ConstrainedFDLayout();
++
++	bool isDone() {
++		return (*done)(computeStress(), X, Y);
++	}
+   
+     /**
+      * @brief  Implements the main layout loop, taking descent steps until
+@@ -779,6 +783,9 @@ public:
+ 
+     double computeStress() const;
+ 
++	// custom uptime modification
++	double stepSizeMultiplier;
++
+ private:
+     unsigned n; // number of nodes
+     std::valarray<double> X, Y;
+diff -rupN libcola-orig/colafd.cpp libcola/colafd.cpp
+--- libcola-orig/colafd.cpp	2014-10-16 06:39:05 +0200
++++ libcola/colafd.cpp	2014-11-04 16:58:47 +0100
+@@ -27,6 +27,10 @@
+ #include <vector>
+ #include <cmath>
+ #include <limits>
++#include <algorithm>
++
++using std::max;
++using std::min;
+ 
+ #include "libvpsc/solve_VPSC.h"
+ #include "libvpsc/variable.h"
+@@ -102,7 +106,8 @@ ConstrainedFDLayout::ConstrainedFDLayout
+       m_idealEdgeLength(idealLength),
+       m_generateNonOverlapConstraints(preventOverlaps),
+       m_edge_lengths(eLengths.data(), eLengths.size()),
+-      m_nonoverlap_exemptions(new NonOverlapConstraintExemptions())
++      m_nonoverlap_exemptions(new NonOverlapConstraintExemptions()),
++	  stepSizeMultiplier(1.0)
+ {
+     if (done == NULL)
+     {
+@@ -1098,7 +1103,7 @@ double ConstrainedFDLayout::applyDescent
+ 
+     COLA_ASSERT(d.size()==oldCoords.size());
+     COLA_ASSERT(d.size()==coords.size());
+-    while(fabs(stepsize)>0.00000000001) {
++    while(fabs(stepsize)>0.00000000001 * stepSizeMultiplier) {
+         coords=oldCoords-stepsize*d;
+         double stress=computeStress();
+         //printf(" applyDV: oldstress=%f, stress=%f, stepsize=%f\n", oldStress,stress,stepsize);
+@@ -1179,7 +1184,7 @@ double ConstrainedFDLayout::computeStepS
+     //COLA_ASSERT(numerator>=0);
+     //COLA_ASSERT(denominator>=0);
+     if(denominator==0) return 0;
+-    return numerator/denominator;
++    return (numerator/denominator)*stepSizeMultiplier;
+ }
+ /*
+  * Just computes the cost (Stress) at the current X,Y position
+@@ -1242,8 +1247,8 @@ static const double LIMIT = 100000000;
+ 
+ static void reduceRange(double& val)
+ {
+-    val = std::min(val, LIMIT);
+-    val = std::max(val, -LIMIT);
++    val = min(val, LIMIT);
++    val = max(val, -LIMIT);
+ }
+ 
+ void ConstrainedFDLayout::outputInstanceToSVG(std::string instanceName)
+@@ -1286,19 +1291,19 @@ void ConstrainedFDLayout::outputInstance
+         
+         if (rMinX > -LIMIT)
+         {
+-            minX = std::min(minX, rMinX);
++            minX = min(minX, rMinX);
+         }
+         if (rMaxX < LIMIT)
+         {
+-            maxX = std::max(maxX,rMaxX);
++            maxX = max(maxX,rMaxX);
+         }
+         if (rMinY > -LIMIT)
+         {
+-            minY = std::min(minY, rMinY);
++            minY = min(minY, rMinY);
+         }
+         if (rMaxY < LIMIT)
+         {
+-            maxY = std::max(maxY, rMaxY);
++            maxY = max(maxY, rMaxY);
+         }
+     }
+  
+diff -rupN libcola-orig/straightener.h libcola/straightener.h
+--- libcola-orig/straightener.h	2014-10-16 06:39:05 +0200
++++ libcola/straightener.h	2014-10-23 10:26:42 +0200
+@@ -25,6 +25,10 @@
+ #include <cfloat>
+ #include <iostream>
+ #include <iterator>
++#include <algorithm>
++
++using std::min;
++using std::max;
+ 
+ #include "libvpsc/rectangle.h"
+ #include "libcola/commondefs.h"
+@@ -53,10 +57,10 @@ struct Route {
+         xmin=ymin=DBL_MAX;
+         xmax=ymax=-DBL_MAX;
+         for(unsigned i=0;i<n;i++) {
+-            xmin=std::min(xmin,xs[i]);
+-            xmax=std::max(xmax,xs[i]);
+-            ymin=std::min(ymin,ys[i]);
+-            ymax=std::max(ymax,ys[i]);
++            xmin=min(xmin,xs[i]);
++            xmax=max(xmax,xs[i]);
++            ymin=min(ymin,ys[i]);
++            ymax=max(ymax,ys[i]);
+         } 
+     }
+     double routeLength () const {

@@ -1,0 +1,661 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		75EB53E41A03BB0A008F597C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 75EB53E21A03BB0A008F597C /* InfoPlist.strings */; };
+		75EB54441A03BB5A008F597C /* AneUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75EB54051A03BB5A008F597C /* AneUtils.cpp */; };
+		75EB54451A03BB5A008F597C /* AneUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 75EB54061A03BB5A008F597C /* AneUtils.h */; };
+		75EB54461A03BB5A008F597C /* colaAne.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75EB54071A03BB5A008F597C /* colaAne.cpp */; };
+		75EB54471A03BB5A008F597C /* colaAne.h in Headers */ = {isa = PBXBuildFile; fileRef = 75EB54081A03BB5A008F597C /* colaAne.h */; };
+		75EB54481A03BB5A008F597C /* ColaAneLayout.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75EB54091A03BB5A008F597C /* ColaAneLayout.cpp */; };
+		75EB54491A03BB5A008F597C /* ColaAneLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 75EB540A1A03BB5A008F597C /* ColaAneLayout.h */; };
+		75EB544A1A03BB5A008F597C /* box.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75EB540D1A03BB5A008F597C /* box.cpp */; };
+		75EB544B1A03BB5A008F597C /* box.h in Headers */ = {isa = PBXBuildFile; fileRef = 75EB540E1A03BB5A008F597C /* box.h */; };
+		75EB544C1A03BB5A008F597C /* cc_clustercontainmentconstraints.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75EB540F1A03BB5A008F597C /* cc_clustercontainmentconstraints.cpp */; };
+		75EB544D1A03BB5A008F597C /* cc_clustercontainmentconstraints.h in Headers */ = {isa = PBXBuildFile; fileRef = 75EB54101A03BB5A008F597C /* cc_clustercontainmentconstraints.h */; };
+		75EB544E1A03BB5A008F597C /* cc_nonoverlapconstraints.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75EB54111A03BB5A008F597C /* cc_nonoverlapconstraints.cpp */; };
+		75EB544F1A03BB5A008F597C /* cc_nonoverlapconstraints.h in Headers */ = {isa = PBXBuildFile; fileRef = 75EB54121A03BB5A008F597C /* cc_nonoverlapconstraints.h */; };
+		75EB54501A03BB5A008F597C /* cluster.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75EB54131A03BB5A008F597C /* cluster.cpp */; };
+		75EB54511A03BB5A008F597C /* cluster.h in Headers */ = {isa = PBXBuildFile; fileRef = 75EB54141A03BB5A008F597C /* cluster.h */; };
+		75EB54521A03BB5A008F597C /* cola.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75EB54151A03BB5A008F597C /* cola.cpp */; };
+		75EB54531A03BB5A008F597C /* cola.h in Headers */ = {isa = PBXBuildFile; fileRef = 75EB54161A03BB5A008F597C /* cola.h */; };
+		75EB54541A03BB5A008F597C /* cola_log.h in Headers */ = {isa = PBXBuildFile; fileRef = 75EB54171A03BB5A008F597C /* cola_log.h */; };
+		75EB54551A03BB5A008F597C /* colafd.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75EB54181A03BB5A008F597C /* colafd.cpp */; };
+		75EB54561A03BB5A008F597C /* commondefs.h in Headers */ = {isa = PBXBuildFile; fileRef = 75EB54191A03BB5A008F597C /* commondefs.h */; };
+		75EB54571A03BB5A008F597C /* compound_constraints.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75EB541A1A03BB5A008F597C /* compound_constraints.cpp */; };
+		75EB54581A03BB5A008F597C /* compound_constraints.h in Headers */ = {isa = PBXBuildFile; fileRef = 75EB541B1A03BB5A008F597C /* compound_constraints.h */; };
+		75EB54591A03BB5A008F597C /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 75EB541C1A03BB5A008F597C /* config.h */; };
+		75EB545A1A03BB5A008F597C /* conjugate_gradient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75EB541D1A03BB5A008F597C /* conjugate_gradient.cpp */; };
+		75EB545B1A03BB5A008F597C /* conjugate_gradient.h in Headers */ = {isa = PBXBuildFile; fileRef = 75EB541E1A03BB5A008F597C /* conjugate_gradient.h */; };
+		75EB545C1A03BB5A008F597C /* connected_components.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75EB541F1A03BB5A008F597C /* connected_components.cpp */; };
+		75EB545D1A03BB5A008F597C /* connected_components.h in Headers */ = {isa = PBXBuildFile; fileRef = 75EB54201A03BB5A008F597C /* connected_components.h */; };
+		75EB545E1A03BB5A008F597C /* convex_hull.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75EB54211A03BB5A008F597C /* convex_hull.cpp */; };
+		75EB545F1A03BB5A008F597C /* convex_hull.h in Headers */ = {isa = PBXBuildFile; fileRef = 75EB54221A03BB5A008F597C /* convex_hull.h */; };
+		75EB54601A03BB5A008F597C /* exceptions.h in Headers */ = {isa = PBXBuildFile; fileRef = 75EB54231A03BB5A008F597C /* exceptions.h */; };
+		75EB54611A03BB5A008F597C /* gradient_projection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75EB54241A03BB5A008F597C /* gradient_projection.cpp */; };
+		75EB54621A03BB5A008F597C /* gradient_projection.h in Headers */ = {isa = PBXBuildFile; fileRef = 75EB54251A03BB5A008F597C /* gradient_projection.h */; };
+		75EB54631A03BB5A008F597C /* output_svg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75EB54261A03BB5A008F597C /* output_svg.cpp */; };
+		75EB54641A03BB5A008F597C /* output_svg.h in Headers */ = {isa = PBXBuildFile; fileRef = 75EB54271A03BB5A008F597C /* output_svg.h */; };
+		75EB54651A03BB5A008F597C /* shapepair.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75EB54281A03BB5A008F597C /* shapepair.cpp */; };
+		75EB54661A03BB5A008F597C /* shapepair.h in Headers */ = {isa = PBXBuildFile; fileRef = 75EB54291A03BB5A008F597C /* shapepair.h */; };
+		75EB54671A03BB5A008F597C /* shortest_paths.h in Headers */ = {isa = PBXBuildFile; fileRef = 75EB542A1A03BB5A008F597C /* shortest_paths.h */; };
+		75EB54681A03BB5A008F597C /* sparse_matrix.h in Headers */ = {isa = PBXBuildFile; fileRef = 75EB542B1A03BB5A008F597C /* sparse_matrix.h */; };
+		75EB54691A03BB5A008F597C /* straightener.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75EB542C1A03BB5A008F597C /* straightener.cpp */; };
+		75EB546A1A03BB5A008F597C /* straightener.h in Headers */ = {isa = PBXBuildFile; fileRef = 75EB542D1A03BB5A008F597C /* straightener.h */; };
+		75EB546B1A03BB5A008F597C /* unused.h in Headers */ = {isa = PBXBuildFile; fileRef = 75EB542E1A03BB5A008F597C /* unused.h */; };
+		75EB546C1A03BB5A008F597C /* assertions.h in Headers */ = {isa = PBXBuildFile; fileRef = 75EB54301A03BB5A008F597C /* assertions.h */; };
+		75EB546D1A03BB5A008F597C /* block.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75EB54311A03BB5A008F597C /* block.cpp */; };
+		75EB546E1A03BB5A008F597C /* block.h in Headers */ = {isa = PBXBuildFile; fileRef = 75EB54321A03BB5A008F597C /* block.h */; };
+		75EB546F1A03BB5A008F597C /* blocks.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75EB54331A03BB5A008F597C /* blocks.cpp */; };
+		75EB54701A03BB5A008F597C /* blocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 75EB54341A03BB5A008F597C /* blocks.h */; };
+		75EB54711A03BB5A008F597C /* cbuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75EB54351A03BB5A008F597C /* cbuffer.cpp */; };
+		75EB54721A03BB5A008F597C /* cbuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 75EB54361A03BB5A008F597C /* cbuffer.h */; };
+		75EB54731A03BB5A008F597C /* constraint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75EB54371A03BB5A008F597C /* constraint.cpp */; };
+		75EB54741A03BB5A008F597C /* constraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 75EB54381A03BB5A008F597C /* constraint.h */; };
+		75EB54751A03BB5A008F597C /* exceptions.h in Headers */ = {isa = PBXBuildFile; fileRef = 75EB54391A03BB5A008F597C /* exceptions.h */; };
+		75EB54761A03BB5A008F597C /* isnan.h in Headers */ = {isa = PBXBuildFile; fileRef = 75EB543A1A03BB5A008F597C /* isnan.h */; };
+		75EB54771A03BB5A008F597C /* linesegment.h in Headers */ = {isa = PBXBuildFile; fileRef = 75EB543B1A03BB5A008F597C /* linesegment.h */; };
+		75EB54781A03BB5A008F597C /* pairing_heap.h in Headers */ = {isa = PBXBuildFile; fileRef = 75EB543C1A03BB5A008F597C /* pairing_heap.h */; };
+		75EB54791A03BB5A008F597C /* rectangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75EB543D1A03BB5A008F597C /* rectangle.cpp */; };
+		75EB547A1A03BB5A008F597C /* rectangle.h in Headers */ = {isa = PBXBuildFile; fileRef = 75EB543E1A03BB5A008F597C /* rectangle.h */; };
+		75EB547B1A03BB5A008F597C /* solve_VPSC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75EB543F1A03BB5A008F597C /* solve_VPSC.cpp */; };
+		75EB547C1A03BB5A008F597C /* solve_VPSC.h in Headers */ = {isa = PBXBuildFile; fileRef = 75EB54401A03BB5A008F597C /* solve_VPSC.h */; };
+		75EB547D1A03BB5A008F597C /* variable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75EB54411A03BB5A008F597C /* variable.cpp */; };
+		75EB547E1A03BB5A008F597C /* variable.h in Headers */ = {isa = PBXBuildFile; fileRef = 75EB54421A03BB5A008F597C /* variable.h */; };
+		75EB547F1A03BB5A008F597C /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 75EB54431A03BB5A008F597C /* LICENSE */; };
+		75EB54831A03BF11008F597C /* Adobe AIR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75EB54821A03BF11008F597C /* Adobe AIR.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		75EB53D61A03BB0A008F597C /* colaAne.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = colaAne.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		75EB53DC1A03BB0A008F597C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		75EB53DD1A03BB0A008F597C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		75EB53DE1A03BB0A008F597C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		75EB53E11A03BB0A008F597C /* colaAne-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "colaAne-Info.plist"; sourceTree = "<group>"; };
+		75EB53E31A03BB0A008F597C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		75EB53E51A03BB0A008F597C /* colaAne-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "colaAne-Prefix.pch"; sourceTree = "<group>"; };
+		75EB53F61A03BB0A008F597C /* colaAneTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "colaAneTests-Info.plist"; sourceTree = "<group>"; };
+		75EB53F81A03BB0A008F597C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		75EB54051A03BB5A008F597C /* AneUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AneUtils.cpp; sourceTree = "<group>"; };
+		75EB54061A03BB5A008F597C /* AneUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AneUtils.h; sourceTree = "<group>"; };
+		75EB54071A03BB5A008F597C /* colaAne.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = colaAne.cpp; sourceTree = "<group>"; };
+		75EB54081A03BB5A008F597C /* colaAne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = colaAne.h; sourceTree = "<group>"; };
+		75EB54091A03BB5A008F597C /* ColaAneLayout.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ColaAneLayout.cpp; sourceTree = "<group>"; };
+		75EB540A1A03BB5A008F597C /* ColaAneLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColaAneLayout.h; sourceTree = "<group>"; };
+		75EB540D1A03BB5A008F597C /* box.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = box.cpp; sourceTree = "<group>"; };
+		75EB540E1A03BB5A008F597C /* box.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = box.h; sourceTree = "<group>"; };
+		75EB540F1A03BB5A008F597C /* cc_clustercontainmentconstraints.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cc_clustercontainmentconstraints.cpp; sourceTree = "<group>"; };
+		75EB54101A03BB5A008F597C /* cc_clustercontainmentconstraints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cc_clustercontainmentconstraints.h; sourceTree = "<group>"; };
+		75EB54111A03BB5A008F597C /* cc_nonoverlapconstraints.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cc_nonoverlapconstraints.cpp; sourceTree = "<group>"; };
+		75EB54121A03BB5A008F597C /* cc_nonoverlapconstraints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cc_nonoverlapconstraints.h; sourceTree = "<group>"; };
+		75EB54131A03BB5A008F597C /* cluster.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cluster.cpp; sourceTree = "<group>"; };
+		75EB54141A03BB5A008F597C /* cluster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cluster.h; sourceTree = "<group>"; };
+		75EB54151A03BB5A008F597C /* cola.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cola.cpp; sourceTree = "<group>"; };
+		75EB54161A03BB5A008F597C /* cola.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cola.h; sourceTree = "<group>"; };
+		75EB54171A03BB5A008F597C /* cola_log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cola_log.h; sourceTree = "<group>"; };
+		75EB54181A03BB5A008F597C /* colafd.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = colafd.cpp; sourceTree = "<group>"; };
+		75EB54191A03BB5A008F597C /* commondefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = commondefs.h; sourceTree = "<group>"; };
+		75EB541A1A03BB5A008F597C /* compound_constraints.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = compound_constraints.cpp; sourceTree = "<group>"; };
+		75EB541B1A03BB5A008F597C /* compound_constraints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = compound_constraints.h; sourceTree = "<group>"; };
+		75EB541C1A03BB5A008F597C /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		75EB541D1A03BB5A008F597C /* conjugate_gradient.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = conjugate_gradient.cpp; sourceTree = "<group>"; };
+		75EB541E1A03BB5A008F597C /* conjugate_gradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = conjugate_gradient.h; sourceTree = "<group>"; };
+		75EB541F1A03BB5A008F597C /* connected_components.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = connected_components.cpp; sourceTree = "<group>"; };
+		75EB54201A03BB5A008F597C /* connected_components.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = connected_components.h; sourceTree = "<group>"; };
+		75EB54211A03BB5A008F597C /* convex_hull.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = convex_hull.cpp; sourceTree = "<group>"; };
+		75EB54221A03BB5A008F597C /* convex_hull.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = convex_hull.h; sourceTree = "<group>"; };
+		75EB54231A03BB5A008F597C /* exceptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = exceptions.h; sourceTree = "<group>"; };
+		75EB54241A03BB5A008F597C /* gradient_projection.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gradient_projection.cpp; sourceTree = "<group>"; };
+		75EB54251A03BB5A008F597C /* gradient_projection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gradient_projection.h; sourceTree = "<group>"; };
+		75EB54261A03BB5A008F597C /* output_svg.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = output_svg.cpp; sourceTree = "<group>"; };
+		75EB54271A03BB5A008F597C /* output_svg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = output_svg.h; sourceTree = "<group>"; };
+		75EB54281A03BB5A008F597C /* shapepair.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = shapepair.cpp; sourceTree = "<group>"; };
+		75EB54291A03BB5A008F597C /* shapepair.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shapepair.h; sourceTree = "<group>"; };
+		75EB542A1A03BB5A008F597C /* shortest_paths.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shortest_paths.h; sourceTree = "<group>"; };
+		75EB542B1A03BB5A008F597C /* sparse_matrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sparse_matrix.h; sourceTree = "<group>"; };
+		75EB542C1A03BB5A008F597C /* straightener.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = straightener.cpp; sourceTree = "<group>"; };
+		75EB542D1A03BB5A008F597C /* straightener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = straightener.h; sourceTree = "<group>"; };
+		75EB542E1A03BB5A008F597C /* unused.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unused.h; sourceTree = "<group>"; };
+		75EB54301A03BB5A008F597C /* assertions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = assertions.h; sourceTree = "<group>"; };
+		75EB54311A03BB5A008F597C /* block.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = block.cpp; sourceTree = "<group>"; };
+		75EB54321A03BB5A008F597C /* block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = block.h; sourceTree = "<group>"; };
+		75EB54331A03BB5A008F597C /* blocks.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = blocks.cpp; sourceTree = "<group>"; };
+		75EB54341A03BB5A008F597C /* blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = blocks.h; sourceTree = "<group>"; };
+		75EB54351A03BB5A008F597C /* cbuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cbuffer.cpp; sourceTree = "<group>"; };
+		75EB54361A03BB5A008F597C /* cbuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cbuffer.h; sourceTree = "<group>"; };
+		75EB54371A03BB5A008F597C /* constraint.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = constraint.cpp; sourceTree = "<group>"; };
+		75EB54381A03BB5A008F597C /* constraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = constraint.h; sourceTree = "<group>"; };
+		75EB54391A03BB5A008F597C /* exceptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = exceptions.h; sourceTree = "<group>"; };
+		75EB543A1A03BB5A008F597C /* isnan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = isnan.h; sourceTree = "<group>"; };
+		75EB543B1A03BB5A008F597C /* linesegment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = linesegment.h; sourceTree = "<group>"; };
+		75EB543C1A03BB5A008F597C /* pairing_heap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pairing_heap.h; sourceTree = "<group>"; };
+		75EB543D1A03BB5A008F597C /* rectangle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rectangle.cpp; sourceTree = "<group>"; };
+		75EB543E1A03BB5A008F597C /* rectangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rectangle.h; sourceTree = "<group>"; };
+		75EB543F1A03BB5A008F597C /* solve_VPSC.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = solve_VPSC.cpp; sourceTree = "<group>"; };
+		75EB54401A03BB5A008F597C /* solve_VPSC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = solve_VPSC.h; sourceTree = "<group>"; };
+		75EB54411A03BB5A008F597C /* variable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = variable.cpp; sourceTree = "<group>"; };
+		75EB54421A03BB5A008F597C /* variable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = variable.h; sourceTree = "<group>"; };
+		75EB54431A03BB5A008F597C /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		75EB54821A03BF11008F597C /* Adobe AIR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Adobe AIR.framework"; path = "Adobe AIR.framework"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		75EB53D21A03BB0A008F597C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75EB54831A03BF11008F597C /* Adobe AIR.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		75EB53CC1A03BB0A008F597C = {
+			isa = PBXGroup;
+			children = (
+				75EB53DF1A03BB0A008F597C /* colaAne */,
+				75EB53F41A03BB0A008F597C /* colaAneTests */,
+				75EB53D81A03BB0A008F597C /* Frameworks */,
+				75EB53D71A03BB0A008F597C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		75EB53D71A03BB0A008F597C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				75EB53D61A03BB0A008F597C /* colaAne.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		75EB53D81A03BB0A008F597C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				75EB54821A03BF11008F597C /* Adobe AIR.framework */,
+				75EB53DB1A03BB0A008F597C /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		75EB53DB1A03BB0A008F597C /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				75EB53DC1A03BB0A008F597C /* Foundation.framework */,
+				75EB53DD1A03BB0A008F597C /* CoreData.framework */,
+				75EB53DE1A03BB0A008F597C /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		75EB53DF1A03BB0A008F597C /* colaAne */ = {
+			isa = PBXGroup;
+			children = (
+				75EB54041A03BB5A008F597C /* colaAne */,
+				75EB540B1A03BB5A008F597C /* libs */,
+				75EB53E01A03BB0A008F597C /* Supporting Files */,
+			);
+			path = colaAne;
+			sourceTree = "<group>";
+		};
+		75EB53E01A03BB0A008F597C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				75EB53E11A03BB0A008F597C /* colaAne-Info.plist */,
+				75EB53E21A03BB0A008F597C /* InfoPlist.strings */,
+				75EB53E51A03BB0A008F597C /* colaAne-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		75EB53F41A03BB0A008F597C /* colaAneTests */ = {
+			isa = PBXGroup;
+			children = (
+				75EB53F51A03BB0A008F597C /* Supporting Files */,
+			);
+			path = colaAneTests;
+			sourceTree = "<group>";
+		};
+		75EB53F51A03BB0A008F597C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				75EB53F61A03BB0A008F597C /* colaAneTests-Info.plist */,
+				75EB53F71A03BB0A008F597C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		75EB54041A03BB5A008F597C /* colaAne */ = {
+			isa = PBXGroup;
+			children = (
+				75EB54051A03BB5A008F597C /* AneUtils.cpp */,
+				75EB54061A03BB5A008F597C /* AneUtils.h */,
+				75EB54071A03BB5A008F597C /* colaAne.cpp */,
+				75EB54081A03BB5A008F597C /* colaAne.h */,
+				75EB54091A03BB5A008F597C /* ColaAneLayout.cpp */,
+				75EB540A1A03BB5A008F597C /* ColaAneLayout.h */,
+			);
+			name = colaAne;
+			path = ../../../src/colaAne;
+			sourceTree = "<group>";
+		};
+		75EB540B1A03BB5A008F597C /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				75EB540C1A03BB5A008F597C /* libcola */,
+				75EB542F1A03BB5A008F597C /* libvpsc */,
+				75EB54431A03BB5A008F597C /* LICENSE */,
+			);
+			name = libs;
+			path = ../../../src/libs;
+			sourceTree = "<group>";
+		};
+		75EB540C1A03BB5A008F597C /* libcola */ = {
+			isa = PBXGroup;
+			children = (
+				75EB540D1A03BB5A008F597C /* box.cpp */,
+				75EB540E1A03BB5A008F597C /* box.h */,
+				75EB540F1A03BB5A008F597C /* cc_clustercontainmentconstraints.cpp */,
+				75EB54101A03BB5A008F597C /* cc_clustercontainmentconstraints.h */,
+				75EB54111A03BB5A008F597C /* cc_nonoverlapconstraints.cpp */,
+				75EB54121A03BB5A008F597C /* cc_nonoverlapconstraints.h */,
+				75EB54131A03BB5A008F597C /* cluster.cpp */,
+				75EB54141A03BB5A008F597C /* cluster.h */,
+				75EB54151A03BB5A008F597C /* cola.cpp */,
+				75EB54161A03BB5A008F597C /* cola.h */,
+				75EB54171A03BB5A008F597C /* cola_log.h */,
+				75EB54181A03BB5A008F597C /* colafd.cpp */,
+				75EB54191A03BB5A008F597C /* commondefs.h */,
+				75EB541A1A03BB5A008F597C /* compound_constraints.cpp */,
+				75EB541B1A03BB5A008F597C /* compound_constraints.h */,
+				75EB541C1A03BB5A008F597C /* config.h */,
+				75EB541D1A03BB5A008F597C /* conjugate_gradient.cpp */,
+				75EB541E1A03BB5A008F597C /* conjugate_gradient.h */,
+				75EB541F1A03BB5A008F597C /* connected_components.cpp */,
+				75EB54201A03BB5A008F597C /* connected_components.h */,
+				75EB54211A03BB5A008F597C /* convex_hull.cpp */,
+				75EB54221A03BB5A008F597C /* convex_hull.h */,
+				75EB54231A03BB5A008F597C /* exceptions.h */,
+				75EB54241A03BB5A008F597C /* gradient_projection.cpp */,
+				75EB54251A03BB5A008F597C /* gradient_projection.h */,
+				75EB54261A03BB5A008F597C /* output_svg.cpp */,
+				75EB54271A03BB5A008F597C /* output_svg.h */,
+				75EB54281A03BB5A008F597C /* shapepair.cpp */,
+				75EB54291A03BB5A008F597C /* shapepair.h */,
+				75EB542A1A03BB5A008F597C /* shortest_paths.h */,
+				75EB542B1A03BB5A008F597C /* sparse_matrix.h */,
+				75EB542C1A03BB5A008F597C /* straightener.cpp */,
+				75EB542D1A03BB5A008F597C /* straightener.h */,
+				75EB542E1A03BB5A008F597C /* unused.h */,
+			);
+			path = libcola;
+			sourceTree = "<group>";
+		};
+		75EB542F1A03BB5A008F597C /* libvpsc */ = {
+			isa = PBXGroup;
+			children = (
+				75EB54301A03BB5A008F597C /* assertions.h */,
+				75EB54311A03BB5A008F597C /* block.cpp */,
+				75EB54321A03BB5A008F597C /* block.h */,
+				75EB54331A03BB5A008F597C /* blocks.cpp */,
+				75EB54341A03BB5A008F597C /* blocks.h */,
+				75EB54351A03BB5A008F597C /* cbuffer.cpp */,
+				75EB54361A03BB5A008F597C /* cbuffer.h */,
+				75EB54371A03BB5A008F597C /* constraint.cpp */,
+				75EB54381A03BB5A008F597C /* constraint.h */,
+				75EB54391A03BB5A008F597C /* exceptions.h */,
+				75EB543A1A03BB5A008F597C /* isnan.h */,
+				75EB543B1A03BB5A008F597C /* linesegment.h */,
+				75EB543C1A03BB5A008F597C /* pairing_heap.h */,
+				75EB543D1A03BB5A008F597C /* rectangle.cpp */,
+				75EB543E1A03BB5A008F597C /* rectangle.h */,
+				75EB543F1A03BB5A008F597C /* solve_VPSC.cpp */,
+				75EB54401A03BB5A008F597C /* solve_VPSC.h */,
+				75EB54411A03BB5A008F597C /* variable.cpp */,
+				75EB54421A03BB5A008F597C /* variable.h */,
+			);
+			path = libvpsc;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		75EB53D31A03BB0A008F597C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75EB546E1A03BB5A008F597C /* block.h in Headers */,
+				75EB54771A03BB5A008F597C /* linesegment.h in Headers */,
+				75EB54581A03BB5A008F597C /* compound_constraints.h in Headers */,
+				75EB546B1A03BB5A008F597C /* unused.h in Headers */,
+				75EB544B1A03BB5A008F597C /* box.h in Headers */,
+				75EB54661A03BB5A008F597C /* shapepair.h in Headers */,
+				75EB544F1A03BB5A008F597C /* cc_nonoverlapconstraints.h in Headers */,
+				75EB546A1A03BB5A008F597C /* straightener.h in Headers */,
+				75EB544D1A03BB5A008F597C /* cc_clustercontainmentconstraints.h in Headers */,
+				75EB54601A03BB5A008F597C /* exceptions.h in Headers */,
+				75EB545D1A03BB5A008F597C /* connected_components.h in Headers */,
+				75EB54781A03BB5A008F597C /* pairing_heap.h in Headers */,
+				75EB545F1A03BB5A008F597C /* convex_hull.h in Headers */,
+				75EB547E1A03BB5A008F597C /* variable.h in Headers */,
+				75EB54541A03BB5A008F597C /* cola_log.h in Headers */,
+				75EB54701A03BB5A008F597C /* blocks.h in Headers */,
+				75EB54531A03BB5A008F597C /* cola.h in Headers */,
+				75EB54681A03BB5A008F597C /* sparse_matrix.h in Headers */,
+				75EB54471A03BB5A008F597C /* colaAne.h in Headers */,
+				75EB54641A03BB5A008F597C /* output_svg.h in Headers */,
+				75EB54451A03BB5A008F597C /* AneUtils.h in Headers */,
+				75EB54761A03BB5A008F597C /* isnan.h in Headers */,
+				75EB54591A03BB5A008F597C /* config.h in Headers */,
+				75EB54741A03BB5A008F597C /* constraint.h in Headers */,
+				75EB54491A03BB5A008F597C /* ColaAneLayout.h in Headers */,
+				75EB547A1A03BB5A008F597C /* rectangle.h in Headers */,
+				75EB54751A03BB5A008F597C /* exceptions.h in Headers */,
+				75EB54511A03BB5A008F597C /* cluster.h in Headers */,
+				75EB54561A03BB5A008F597C /* commondefs.h in Headers */,
+				75EB54671A03BB5A008F597C /* shortest_paths.h in Headers */,
+				75EB546C1A03BB5A008F597C /* assertions.h in Headers */,
+				75EB547C1A03BB5A008F597C /* solve_VPSC.h in Headers */,
+				75EB545B1A03BB5A008F597C /* conjugate_gradient.h in Headers */,
+				75EB54721A03BB5A008F597C /* cbuffer.h in Headers */,
+				75EB54621A03BB5A008F597C /* gradient_projection.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		75EB53D51A03BB0A008F597C /* colaAne */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75EB53FE1A03BB0A008F597C /* Build configuration list for PBXNativeTarget "colaAne" */;
+			buildPhases = (
+				75EB53D11A03BB0A008F597C /* Sources */,
+				75EB53D21A03BB0A008F597C /* Frameworks */,
+				75EB53D31A03BB0A008F597C /* Headers */,
+				75EB53D41A03BB0A008F597C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = colaAne;
+			productName = colaAne;
+			productReference = 75EB53D61A03BB0A008F597C /* colaAne.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		75EB53CD1A03BB0A008F597C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = uptime;
+			};
+			buildConfigurationList = 75EB53D01A03BB0A008F597C /* Build configuration list for PBXProject "colaAne" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 75EB53CC1A03BB0A008F597C;
+			productRefGroup = 75EB53D71A03BB0A008F597C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				75EB53D51A03BB0A008F597C /* colaAne */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		75EB53D41A03BB0A008F597C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75EB547F1A03BB5A008F597C /* LICENSE in Resources */,
+				75EB53E41A03BB0A008F597C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		75EB53D11A03BB0A008F597C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75EB54521A03BB5A008F597C /* cola.cpp in Sources */,
+				75EB54791A03BB5A008F597C /* rectangle.cpp in Sources */,
+				75EB545C1A03BB5A008F597C /* connected_components.cpp in Sources */,
+				75EB54611A03BB5A008F597C /* gradient_projection.cpp in Sources */,
+				75EB54691A03BB5A008F597C /* straightener.cpp in Sources */,
+				75EB54441A03BB5A008F597C /* AneUtils.cpp in Sources */,
+				75EB54711A03BB5A008F597C /* cbuffer.cpp in Sources */,
+				75EB545E1A03BB5A008F597C /* convex_hull.cpp in Sources */,
+				75EB544A1A03BB5A008F597C /* box.cpp in Sources */,
+				75EB54631A03BB5A008F597C /* output_svg.cpp in Sources */,
+				75EB54461A03BB5A008F597C /* colaAne.cpp in Sources */,
+				75EB546F1A03BB5A008F597C /* blocks.cpp in Sources */,
+				75EB54481A03BB5A008F597C /* ColaAneLayout.cpp in Sources */,
+				75EB54731A03BB5A008F597C /* constraint.cpp in Sources */,
+				75EB544E1A03BB5A008F597C /* cc_nonoverlapconstraints.cpp in Sources */,
+				75EB547B1A03BB5A008F597C /* solve_VPSC.cpp in Sources */,
+				75EB546D1A03BB5A008F597C /* block.cpp in Sources */,
+				75EB54551A03BB5A008F597C /* colafd.cpp in Sources */,
+				75EB54651A03BB5A008F597C /* shapepair.cpp in Sources */,
+				75EB547D1A03BB5A008F597C /* variable.cpp in Sources */,
+				75EB54501A03BB5A008F597C /* cluster.cpp in Sources */,
+				75EB544C1A03BB5A008F597C /* cc_clustercontainmentconstraints.cpp in Sources */,
+				75EB545A1A03BB5A008F597C /* conjugate_gradient.cpp in Sources */,
+				75EB54571A03BB5A008F597C /* compound_constraints.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		75EB53E21A03BB0A008F597C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75EB53E31A03BB0A008F597C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		75EB53F71A03BB0A008F597C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75EB53F81A03BB0A008F597C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		75EB53FC1A03BB0A008F597C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx10.7;
+			};
+			name = Debug;
+		};
+		75EB53FD1A03BB0A008F597C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				SDKROOT = macosx10.7;
+			};
+			name = Release;
+		};
+		75EB53FF1A03BB0A008F597C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+					"\"$(SYSTEM_APPS_DIR)/Adobe Flash Builder 4.5/sdks/4.5.1-air3.0/runtimes/air/mac\"",
+					"\"$(SYSTEM_APPS_DIR)/Adobe Flash Builder 4.6/sdks/flex_sdk_3_5_0_12683B_air_3_2_mac/runtimes/air/mac\"",
+				);
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					COLAANE_MAC,
+					"DEBUG=1",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					../../src/libs,
+                    "$(XC_HEADER_SEARCH_PATHS)"
+				);
+				INFOPLIST_FILE = "colaAne/colaAne-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../runtimes/air/mac @executable_path/../Frameworks /Library/Frameworks";
+				OTHER_CFLAGS = "-fvisibility=hidden";
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
+				OTHER_LDFLAGS = (
+					"-flat_namespace",
+					"-weak_framework",
+					"\"Adobe AIR\"",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.7;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		75EB54001A03BB0A008F597C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+					"\"$(SYSTEM_APPS_DIR)/Adobe Flash Builder 4.5/sdks/4.5.1-air3.0/runtimes/air/mac\"",
+					"\"$(SYSTEM_APPS_DIR)/Adobe Flash Builder 4.6/sdks/flex_sdk_3_5_0_12683B_air_3_2_mac/runtimes/air/mac\"",
+				);
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				GCC_PREPROCESSOR_DEFINITIONS = COLAANE_MAC;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					../../src/libs,
+                    "$(XC_HEADER_SEARCH_PATHS)"
+				);
+				INFOPLIST_FILE = "colaAne/colaAne-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../runtimes/air/mac @executable_path/../Frameworks /Library/Frameworks";
+				OTHER_CFLAGS = "-fvisibility=hidden";
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
+				OTHER_LDFLAGS = (
+					"-flat_namespace",
+					"-weak_framework",
+					"\"Adobe AIR\"",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.7;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		75EB53D01A03BB0A008F597C /* Build configuration list for PBXProject "colaAne" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75EB53FC1A03BB0A008F597C /* Debug */,
+				75EB53FD1A03BB0A008F597C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75EB53FE1A03BB0A008F597C /* Build configuration list for PBXNativeTarget "colaAne" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75EB53FF1A03BB0A008F597C /* Debug */,
+				75EB54001A03BB0A008F597C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 75EB53CD1A03BB0A008F597C /* Project object */;
+}

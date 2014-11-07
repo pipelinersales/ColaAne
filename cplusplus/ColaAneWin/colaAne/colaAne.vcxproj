@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Build|Win32">
+      <Configuration>Build</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\colaAne\AneUtils.h" />
+    <ClInclude Include="..\..\src\colaAne\colaAne.h" />
+    <ClInclude Include="..\..\src\colaAne\ColaAneLayout.h" />
+    <ClInclude Include="..\..\src\libs\libcola\box.h" />
+    <ClInclude Include="..\..\src\libs\libcola\cc_clustercontainmentconstraints.h" />
+    <ClInclude Include="..\..\src\libs\libcola\cc_nonoverlapconstraints.h" />
+    <ClInclude Include="..\..\src\libs\libcola\cluster.h" />
+    <ClInclude Include="..\..\src\libs\libcola\cola.h" />
+    <ClInclude Include="..\..\src\libs\libcola\cola_log.h" />
+    <ClInclude Include="..\..\src\libs\libcola\commondefs.h" />
+    <ClInclude Include="..\..\src\libs\libcola\compound_constraints.h" />
+    <ClInclude Include="..\..\src\libs\libcola\config.h" />
+    <ClInclude Include="..\..\src\libs\libcola\conjugate_gradient.h" />
+    <ClInclude Include="..\..\src\libs\libcola\connected_components.h" />
+    <ClInclude Include="..\..\src\libs\libcola\convex_hull.h" />
+    <ClInclude Include="..\..\src\libs\libcola\exceptions.h" />
+    <ClInclude Include="..\..\src\libs\libcola\gradient_projection.h" />
+    <ClInclude Include="..\..\src\libs\libcola\output_svg.h" />
+    <ClInclude Include="..\..\src\libs\libcola\shapepair.h" />
+    <ClInclude Include="..\..\src\libs\libcola\shortest_paths.h" />
+    <ClInclude Include="..\..\src\libs\libcola\sparse_matrix.h" />
+    <ClInclude Include="..\..\src\libs\libcola\straightener.h" />
+    <ClInclude Include="..\..\src\libs\libcola\unused.h" />
+    <ClInclude Include="..\..\src\libs\libvpsc\assertions.h" />
+    <ClInclude Include="..\..\src\libs\libvpsc\block.h" />
+    <ClInclude Include="..\..\src\libs\libvpsc\blocks.h" />
+    <ClInclude Include="..\..\src\libs\libvpsc\cbuffer.h" />
+    <ClInclude Include="..\..\src\libs\libvpsc\constraint.h" />
+    <ClInclude Include="..\..\src\libs\libvpsc\exceptions.h" />
+    <ClInclude Include="..\..\src\libs\libvpsc\isnan.h" />
+    <ClInclude Include="..\..\src\libs\libvpsc\linesegment.h" />
+    <ClInclude Include="..\..\src\libs\libvpsc\pairing_heap.h" />
+    <ClInclude Include="..\..\src\libs\libvpsc\rectangle.h" />
+    <ClInclude Include="..\..\src\libs\libvpsc\solve_VPSC.h" />
+    <ClInclude Include="..\..\src\libs\libvpsc\variable.h" />
+    <ClInclude Include="air\FlashRuntimeExtensions.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\colaAne\AneUtils.cpp" />
+    <ClCompile Include="..\..\src\colaAne\colaAne.cpp" />
+    <ClCompile Include="..\..\src\colaAne\ColaAneLayout.cpp" />
+    <ClCompile Include="..\..\src\libs\libcola\box.cpp" />
+    <ClCompile Include="..\..\src\libs\libcola\cc_clustercontainmentconstraints.cpp" />
+    <ClCompile Include="..\..\src\libs\libcola\cc_nonoverlapconstraints.cpp" />
+    <ClCompile Include="..\..\src\libs\libcola\cluster.cpp" />
+    <ClCompile Include="..\..\src\libs\libcola\cola.cpp" />
+    <ClCompile Include="..\..\src\libs\libcola\colafd.cpp" />
+    <ClCompile Include="..\..\src\libs\libcola\compound_constraints.cpp" />
+    <ClCompile Include="..\..\src\libs\libcola\conjugate_gradient.cpp" />
+    <ClCompile Include="..\..\src\libs\libcola\connected_components.cpp" />
+    <ClCompile Include="..\..\src\libs\libcola\convex_hull.cpp" />
+    <ClCompile Include="..\..\src\libs\libcola\gradient_projection.cpp" />
+    <ClCompile Include="..\..\src\libs\libcola\output_svg.cpp" />
+    <ClCompile Include="..\..\src\libs\libcola\shapepair.cpp" />
+    <ClCompile Include="..\..\src\libs\libcola\straightener.cpp" />
+    <ClCompile Include="..\..\src\libs\libvpsc\block.cpp" />
+    <ClCompile Include="..\..\src\libs\libvpsc\blocks.cpp" />
+    <ClCompile Include="..\..\src\libs\libvpsc\cbuffer.cpp" />
+    <ClCompile Include="..\..\src\libs\libvpsc\constraint.cpp" />
+    <ClCompile Include="..\..\src\libs\libvpsc\rectangle.cpp" />
+    <ClCompile Include="..\..\src\libs\libvpsc\solve_VPSC.cpp" />
+    <ClCompile Include="..\..\src\libs\libvpsc\variable.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{484B7E15-95F9-447A-B282-8849E2C86958}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>colaAne</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120_xp</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120_xp</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Build|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120_xp</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Build|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(SolutionDir)\..\src\libs;$(ProjectDir)\air;$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(SolutionDir)\..\src\libs;$(ProjectDir)\air;$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Build|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(SolutionDir)\..\src\libs;$(ProjectDir)\air;$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;COLAANE_WIN;_CRT_SECURE_NO_WARNINGS;_DEBUG;_WINDOWS;COLAANE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>FlashRuntimeExtensions.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;COLAANE_WIN;_CRT_SECURE_NO_WARNINGS;NDEBUG;_WINDOWS;COLAANE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>FlashRuntimeExtensions.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Build|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;COLAANE_WIN;_CRT_SECURE_NO_WARNINGS;NDEBUG;_WINDOWS;COLAANE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>FlashRuntimeExtensions.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

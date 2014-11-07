@@ -1,0 +1,3 @@
+XC_FRAMEWORK_SEARCH_PATHS = "path_to_air_sdk/runtimes/air/mac/"
+XC_HEADER_SEARCH_PATHS = "path_to_air_sdk/include" "path_to_air_sdk/include/Adobe AIR"
+XC_LIBRARY_SEARCH_PATHS = "path_to_air_sdk/runtimes/air/mac"

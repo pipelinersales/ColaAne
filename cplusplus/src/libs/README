@@ -1,0 +1,7 @@
+This directory contains the original sources of libcola and libvpsc based on 
+https://github.com/mjwybrow/adaptagrams/tree/f94a48d1d835c156d37d6cc8e7e92eb58aa4c841
+with a few modifications mostly for the purpose of compatibility with an older version
+of the Visual C++ compiler. Only the source files are included.
+
+Changes against the original versions of libcola and libvpsc are summarized in the 
+libcola.patch, libvpsc.patch files.

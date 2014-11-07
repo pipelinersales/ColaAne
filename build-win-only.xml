@@ -1,0 +1,101 @@
+<project name="cola-ane" basedir="." default="package">
+	<property environment="env."/>
+	<fail unless="env.FLEX_HOME"/>
+
+	<property name="FLEX_HOME" value="${env.FLEX_HOME}" />
+	<property name="MSBUILD_HOME" value="${env.MSBUILD_HOME}" />
+	<property file="build.properties" />
+	
+	<property name="ane-id" value="at.uptime.codebase.ane.cola.ColaANE" />
+	<taskdef resource="flexTasks.tasks" classpath="${env.FLEX_HOME}/ant/lib/flexTasks.jar" />
+	
+	<target name="clean">
+		<delete dir="${output.dir}" quiet="true" includeEmptyDirs="true"/>
+		<mkdir dir="${output.dir}"/>
+		
+		<delete dir="${test.reports.dir}" quiet="true" includeEmptyDirs="true"/>
+		<mkdir dir="${test.reports.dir}"/>
+		
+		<delete dir="${dist.dir}" quiet="true" includeEmptyDirs="true"/>
+		<mkdir dir="${dist.dir}"/>
+	</target>
+	
+	
+	
+	<target name="compile">
+		<compile.macro
+			classes="at.uptime.codebase.ane.cola.ColaANE"
+			output="${output.dir}/${ane-id}/library.swc"
+			 />
+	</target>
+	
+	<target name="package" depends="compile">
+	    <mkdir dir="${dist.dir}"/>
+		<copy file="${resources.dir}/win-only/${ane-id}-extension.xml" tofile="${output.dir}/${ane-id}/extension.xml"/>
+		<unzip src="${output.dir}/${ane-id}/library.swc" dest="${output.dir}/${ane-id}"/>
+		
+		<copy file="${basedir}/cplusplus/ColaAneWin/Build/colaAne.dll" tofile="${output.dir}/${ane-id}/lib/colaAne.dll"/>
+
+		<package.macro
+			path="${ane-id}"
+			anetarget="${ane-target}"
+			windowsImpl="colaAne.dll"
+			/>	
+		
+	</target>
+	
+	<macrodef name="compile.macro">
+		
+		<attribute name="classes"/>
+		<attribute name="output"/>		
+		
+		<sequential>
+			<compc 
+				output="@{output}" failonerror="true" fork="true" maxmemory="512m">
+				<target-player>13</target-player>
+				<include-classes>@{classes}</include-classes>
+				<load-config filename="${FLEX_HOME}/frameworks/air-config.xml" />
+				<source-path path-element="${src.dir}" />
+			</compc>
+		</sequential>
+	</macrodef>
+	
+	<macrodef name="package.macro">
+		<attribute name="path" default=""/>
+		<attribute name="windowsImpl" default="extension.dll"/>
+		<attribute name="anetarget" />
+
+		<sequential>
+         <echo >${dist.dir}/@{path}-@{anetarget}.ane</echo>
+			<java jar="${FLEX_HOME}/lib/adt.jar" fork="true" failonerror="true">
+				<arg value="-package"/>
+
+				<arg value="-storetype"/>
+				<arg value="pkcs12"/>
+				<arg value="-keystore"/>
+				<arg value="${certificate}"/>
+				<arg value="-storepass"/>
+				<arg value="${password}"/>
+			
+				<arg value="-target"/>
+				<arg value="ane"/>
+				<arg value="${dist.dir}/@{path}-@{anetarget}.ane"/>
+				<arg value="${output.dir}/@{path}/extension.xml"/>
+				<arg value="-swc"/>
+				<arg value="${output.dir}/@{path}/library.swc"/>
+				<arg value="-platform" />
+				<arg value="Windows-x86" />
+				<arg value="-C"/>
+				<arg value="${output.dir}/@{path}"/>
+				<arg value="library.swf"/>
+				<arg value="-C"/>
+				<arg value="${output.dir}/@{path}/lib"/>
+				<arg value="@{windowsImpl}" />
+			</java>
+		</sequential>
+	</macrodef>
+
+
+
+	
+</project>

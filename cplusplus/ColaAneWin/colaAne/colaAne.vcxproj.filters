@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\ane">
+      <UniqueIdentifier>{1ff19226-ac30-494c-8a11-5949e9e60dfe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ane">
+      <UniqueIdentifier>{38183c42-d625-4fcb-b3c9-6048f52c837d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\libvpsc">
+      <UniqueIdentifier>{4a8e4e60-133f-44e9-a499-280a680a7e29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\libvpsc">
+      <UniqueIdentifier>{893cbd1e-e7b8-4c7e-a2c2-463830c60f86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\libcola">
+      <UniqueIdentifier>{de79c63c-6b69-4922-9be2-a2fb4bff8378}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\libcola">
+      <UniqueIdentifier>{a163c501-37e8-42c9-9b17-68e4e91a0fd9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\colaAne\AneUtils.h">
+      <Filter>Header Files\ane</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\colaAne\colaAne.h">
+      <Filter>Header Files\ane</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\colaAne\ColaAneLayout.h">
+      <Filter>Header Files\ane</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libs\libvpsc\assertions.h">
+      <Filter>Header Files\libvpsc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libs\libvpsc\block.h">
+      <Filter>Header Files\libvpsc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libs\libvpsc\blocks.h">
+      <Filter>Header Files\libvpsc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libs\libvpsc\cbuffer.h">
+      <Filter>Header Files\libvpsc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libs\libvpsc\constraint.h">
+      <Filter>Header Files\libvpsc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libs\libvpsc\exceptions.h">
+      <Filter>Header Files\libvpsc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libs\libvpsc\isnan.h">
+      <Filter>Header Files\libvpsc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libs\libvpsc\linesegment.h">
+      <Filter>Header Files\libvpsc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libs\libvpsc\pairing_heap.h">
+      <Filter>Header Files\libvpsc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libs\libvpsc\rectangle.h">
+      <Filter>Header Files\libvpsc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libs\libvpsc\solve_VPSC.h">
+      <Filter>Header Files\libvpsc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libs\libvpsc\variable.h">
+      <Filter>Header Files\libvpsc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libs\libcola\box.h">
+      <Filter>Header Files\libcola</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libs\libcola\cc_clustercontainmentconstraints.h">
+      <Filter>Header Files\libcola</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libs\libcola\cc_nonoverlapconstraints.h">
+      <Filter>Header Files\libcola</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libs\libcola\cluster.h">
+      <Filter>Header Files\libcola</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libs\libcola\cola.h">
+      <Filter>Header Files\libcola</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libs\libcola\cola_log.h">
+      <Filter>Header Files\libcola</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libs\libcola\commondefs.h">
+      <Filter>Header Files\libcola</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libs\libcola\compound_constraints.h">
+      <Filter>Header Files\libcola</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libs\libcola\config.h">
+      <Filter>Header Files\libcola</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libs\libcola\conjugate_gradient.h">
+      <Filter>Header Files\libcola</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libs\libcola\connected_components.h">
+      <Filter>Header Files\libcola</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libs\libcola\convex_hull.h">
+      <Filter>Header Files\libcola</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libs\libcola\exceptions.h">
+      <Filter>Header Files\libcola</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libs\libcola\gradient_projection.h">
+      <Filter>Header Files\libcola</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libs\libcola\output_svg.h">
+      <Filter>Header Files\libcola</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libs\libcola\shapepair.h">
+      <Filter>Header Files\libcola</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libs\libcola\shortest_paths.h">
+      <Filter>Header Files\libcola</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libs\libcola\sparse_matrix.h">
+      <Filter>Header Files\libcola</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libs\libcola\straightener.h">
+      <Filter>Header Files\libcola</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libs\libcola\unused.h">
+      <Filter>Header Files\libcola</Filter>
+    </ClInclude>
+    <ClInclude Include="air\FlashRuntimeExtensions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\colaAne\AneUtils.cpp">
+      <Filter>Source Files\ane</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\colaAne\colaAne.cpp">
+      <Filter>Source Files\ane</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\colaAne\ColaAneLayout.cpp">
+      <Filter>Source Files\ane</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libs\libvpsc\block.cpp">
+      <Filter>Source Files\libvpsc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libs\libvpsc\blocks.cpp">
+      <Filter>Source Files\libvpsc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libs\libvpsc\cbuffer.cpp">
+      <Filter>Source Files\libvpsc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libs\libvpsc\constraint.cpp">
+      <Filter>Source Files\libvpsc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libs\libvpsc\rectangle.cpp">
+      <Filter>Source Files\libvpsc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libs\libvpsc\solve_VPSC.cpp">
+      <Filter>Source Files\libvpsc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libs\libvpsc\variable.cpp">
+      <Filter>Source Files\libvpsc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libs\libcola\box.cpp">
+      <Filter>Source Files\libcola</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libs\libcola\cc_clustercontainmentconstraints.cpp">
+      <Filter>Source Files\libcola</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libs\libcola\cc_nonoverlapconstraints.cpp">
+      <Filter>Source Files\libcola</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libs\libcola\cluster.cpp">
+      <Filter>Source Files\libcola</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libs\libcola\cola.cpp">
+      <Filter>Source Files\libcola</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libs\libcola\colafd.cpp">
+      <Filter>Source Files\libcola</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libs\libcola\compound_constraints.cpp">
+      <Filter>Source Files\libcola</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libs\libcola\conjugate_gradient.cpp">
+      <Filter>Source Files\libcola</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libs\libcola\connected_components.cpp">
+      <Filter>Source Files\libcola</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libs\libcola\convex_hull.cpp">
+      <Filter>Source Files\libcola</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libs\libcola\gradient_projection.cpp">
+      <Filter>Source Files\libcola</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libs\libcola\output_svg.cpp">
+      <Filter>Source Files\libcola</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libs\libcola\shapepair.cpp">
+      <Filter>Source Files\libcola</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libs\libcola\straightener.cpp">
+      <Filter>Source Files\libcola</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
